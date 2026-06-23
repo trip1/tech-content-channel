@@ -1,0 +1,25 @@
+{
+  "repo": "keploy/keploy",
+  "repo_url": "https://github.com/keploy/keploy",
+  "stars": 17743,
+  "primary_language": "Go",
+  "content_language_focus": "Go",
+  "repo_description": "Open-source platform for creating safe, isolated production sandboxes for API, integration, and E2E testing.",
+  "issue_number": 2601,
+  "issue_title": "[feature]: Improve GitHub API Rate Limit Handling for Large Repositories in the stargazers script",
+  "issue_url": "https://github.com/keploy/keploy/issues/2601",
+  "labels": [
+    "Enhancement",
+    "Good First Issue",
+    "GSoC",
+    "keploy"
+  ],
+  "comments": 6,
+  "created_at": "2025-03-19T13:51:27Z",
+  "updated_at": "2025-04-08T07:13:36Z",
+  "body_len": 3332,
+  "video_angle": "Improve GitHub API rate limit handling in stargazers script",
+  "fit_confidence": "high",
+  "issue_body": "### \ud83d\udc40 Is there an existing feature request for this?\n\n- [x] I have searched the existing issues\n\n### \ud83d\udd16 Enhancement description\n\n# \ud83d\udee0\ufe0f Improve GitHub API Rate Limit Handling for Large Repositories  \n\n## \ud83d\udd16 Enhancement Description  \nCurrently, the script relies on a GitHub access token, which has a rate limit of **5000 API calls per hour**. When fetching stargazers for repositories with a large number of stars, the script exceeds this limit, causing it to fail and requiring a reload after an hour.  \n\nTo improve efficiency and make the script more reliable for large repositories, we need to explore and implement solutions to handle API rate limits effectively.  \n\n## \ud83d\udccc Expected Behavior  \n- The script should be able to handle large repositories without exhausting API limits quickly.  \n- It should gracefully handle rate limits and avoid abrupt failures.  \n- Users should be able to continue fetching stargazers without waiting for an hour.  \n\n## \u2699\ufe0f Current Behavior  \n- The script stops working when the **5000 API call per hour** limit is exceeded.  \n- It forces users to wait for an hour before they can resume fetching.  \n- No built-in handling for rate limits or alternative approaches exists.  \n\n## \ud83d\udca1 Suggested Solutions  \n1. **Implement API Pagination and Caching**  \n   - Optimize API calls by storing already fetched stargazers in cache/local storage.  \n   - Fetch only new stargazers instead of repeatedly requesting the full list.  \n\n2. **Use Multiple GitHub Access Tokens**  \n   - Support multiple GitHub tokens to distribute API requests across different credentials.  \n   - Implement token rotation to automatically switch when one token reaches the limit.  \n\n3. **Implement GraphQL API Instead of REST**  \n   - The GitHub GraphQL API allows fetching more data in fewer requests, reducing API usage.  \n   - Convert API calls to GraphQL queries for better efficiency.  \n\n4. **Introduce Exponential Backoff & Retry Mechanism**  \n   - When nearing the API limit, reduce request frequency dynamically.  \n   - Implement a backoff strategy to retry after a delay instead of stopping completely.  \n\n5. **Use Third-Party Proxy Services or Caching Mechanisms**  \n   - Store API responses in a temporary database (e.g., Firebase, Redis) to minimize repeated calls.  \n   - Explore GitHub Apps authentication, which has higher rate limits compared to personal access tokens.  \n\n6. **Innovation and Custom Solutions**  \n   - Contributors are welcome to come up with their own **creative solutions** to optimize API requests.  \n   - Any novel approach that improves efficiency and scalability is highly encouraged!  \n\n## \ud83c\udfaf Impact  \n- Makes the script **more robust and scalable** for repositories with a high number of stargazers.  \n- Ensures **continuous operation** without abrupt failures due to API rate limits.  \n- Improves **efficiency and reliability** by optimizing API requests.  \n\n\n### \ud83c\udfa4 Why should this be worked on?\n\nHandling API rate limits efficiently is crucial to ensure seamless functionality for large repositories. Implementing these optimizations will:  \n- Prevent users from **waiting an hour** due to exceeded rate limits.  \n- Improve **performance** by reducing unnecessary API calls.  \n- Enhance **scalability**, allowing the script to support large repositories effortlessly.  \n\n### \ud83d\udcbb Repository\n\nkeploy",
+  "comment_previews": []
+}

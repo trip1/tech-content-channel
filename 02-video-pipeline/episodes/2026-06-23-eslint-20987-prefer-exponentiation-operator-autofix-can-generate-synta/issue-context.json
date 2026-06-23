@@ -1,0 +1,25 @@
+{
+  "repo": "eslint/eslint",
+  "repo_url": "https://github.com/eslint/eslint",
+  "stars": 27389,
+  "primary_language": "JavaScript",
+  "content_language_focus": "JavaScript",
+  "repo_description": "Find and fix problems in your JavaScript code.",
+  "issue_number": 20987,
+  "issue_title": "Bug: Autofix for prefer-exponentiation-operator produces SyntaxError when Math.pow() is at the start of an ExpressionStatement",
+  "issue_url": "https://github.com/eslint/eslint/issues/20987",
+  "labels": [
+    "bug",
+    "rule",
+    "accepted",
+    "autofix"
+  ],
+  "comments": 5,
+  "created_at": "2026-06-15T10:54:33Z",
+  "updated_at": "2026-06-18T18:53:46Z",
+  "body_len": 2044,
+  "video_angle": "prefer-exponentiation-operator autofix can generate SyntaxError",
+  "fit_confidence": "high",
+  "issue_body": "### Environment\n\nNode version: v24.15.0\nnpm version: 11.12.1\nLocal ESLint version: 10.5.0\nGlobal ESLint version: \nOperating System: Windows\n\n### What parser are you using?\n\nDefault (Espree)\n\n### What did you do?\n\nThe `prefer-exponentiation-operator` rule's autofixer does not wrap the resulting expression in parentheses when the `Math.pow` expression is at the start of an `ExpressionStatement` and the base argument starts with an ambiguous token (such as `{`, `function`, or `class`).\n```javascript\nMath.pow({a:1}.a, 2);\nMath.pow(function(){return 2}(), 3);\nMath.pow(class{static x=2}.x, 4);\n```\n\n### What did you expect to happen?\n\nThe autofixer should wrap the resulting binary expression in parentheses so that the JS parser treats it as an expression instead of a block or declaration.\n\n### What actually happened?\n\nThe autofixer strips the `Math.pow()` wrapper and places the base token directly at the start of the statement. The JavaScript parser interprets these tokens as a `BlockStatement`, `FunctionDeclaration`, or `ClassDeclaration` instead of an expression, causing a fatal `SyntaxError`.\n\n```javascript\n{a:1}.a**2; // Parsed as BlockStatement '{a:1}', followed by '.a**2' (SyntaxError)\nfunction(){return 2}()**3; // Parsed as FunctionDeclaration (SyntaxError: missing name)\nclass{static x=2}.x**4; // Parsed as ClassDeclaration (SyntaxError: missing name)\n```\n\n### Link to Minimal Reproducible Example\n\nhttps://eslint.org/play/#eyJ0ZXh0IjoiTWF0aC5wb3coe2E6MX0uYSwgMik7XG5NYXRoLnBvdyhmdW5jdGlvbigpe3JldHVybiAyfSgpLCAzKTtcbk1hdGgucG93KGNsYXNze3N0YXRpYyB4PTJ9LngsIDQpO1xuIiwib3B0aW9ucyI6eyJydWxlcyI6eyJwcmVmZXItZXhwb25lbnRpYXRpb24tb3BlcmF0b3IiOlsiZXJyb3IiXX0sImxhbmd1YWdlT3B0aW9ucyI6eyJwYXJzZXJPcHRpb25zIjp7ImVjbWFGZWF0dXJlcyI6e319fX19\n\n### Participation\n\n- [x] I am willing to submit a pull request for this issue.\n\n### AI acknowledgment\n\n- [x] I did not use AI to generate this issue report.\n- [ ] (If the above is not checked) I have reviewed the AI-generated content before submitting.\n\n### Additional comments\n\n_No response_",
+  "comment_previews": []
+}

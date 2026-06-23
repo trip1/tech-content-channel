@@ -1,0 +1,24 @@
+{
+  "repo": "detekt/detekt",
+  "repo_url": "https://github.com/detekt/detekt",
+  "stars": 6979,
+  "primary_language": "Kotlin",
+  "content_language_focus": "Kotlin",
+  "repo_description": "Static code analysis for Kotlin",
+  "issue_number": 9279,
+  "issue_title": "Allow configuring UnnecessaryFullyQualifiedName to ignore certain packages",
+  "issue_url": "https://github.com/detekt/detekt/issues/9279",
+  "labels": [
+    "help wanted",
+    "feature",
+    "good first issue"
+  ],
+  "comments": 19,
+  "created_at": "2026-04-26T03:36:35Z",
+  "updated_at": "2026-06-16T19:29:45Z",
+  "body_len": 319,
+  "video_angle": "Allow UnnecessaryFullyQualifiedName ignore packages",
+  "fit_confidence": "high",
+  "issue_body": "Currently, `UnnecessaryFullyQualifiedName` reports a violation for `android.R.id.content`, which is correct, because the class name is `R`, and the FQN is `android.R`.\n\nSince that pattern (and others) is a common occurrence, it would be nice if we could specify a list of packages that would be excluded from the rule.\n",
+  "comment_previews": []
+}
