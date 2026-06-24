@@ -6,7 +6,7 @@
 
 ## Scripting
 
-- [ ]
+- [ ] Proxmox microVM setup — `02-video-pipeline/episodes/proxmox-microvm-setup/`
 
 ## Recording / Streaming
 
