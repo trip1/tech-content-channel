@@ -28,12 +28,17 @@ Planning hub for a software development, server infrastructure, homelab, and gen
 
 ## Weekly workflow
 
+Follow the full walkthrough in `02-video-pipeline/video-production-walkthrough.md`.
+
 1. Capture raw ideas in `01-ideas/inbox.md`.
-2. Promote promising ideas into `02-video-pipeline/backlog.md`.
-3. Create an episode folder from `templates/episode-brief.md`.
-4. Track technical builds in `04-projects/project-task-board.md`.
-5. Publish using `06-publishing/publishing-checklist.md`.
-6. Review performance in `07-analytics/metrics-review.md`.
+2. Validate strong ideas in `01-ideas/validated-ideas.md`.
+3. Promote promising ideas into `02-video-pipeline/backlog.md`.
+4. Create an episode folder from `templates/episode-brief.md`.
+5. Copy `templates/production-checklist.md` into the episode folder.
+6. Package the video before scripting: title, thumbnail, first 30 seconds, open loops.
+7. Record proof/result first, then walkthrough, then talking head.
+8. Publish using `06-publishing/publishing-checklist.md`.
+9. Review performance in `07-analytics/metrics-review.md`.
 
 ## Status tags
 
