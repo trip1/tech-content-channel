@@ -36,8 +36,8 @@ Beginners who want automation wins without building a full app.
 - Text: `DON'T SKIP THIS`
 
 ## First 30 seconds
-**0:00-0:10** — Show the demo/result or the scorecard immediately.  
-**0:10-0:20** — State the problem: viewers hear about this trend but do not know what is actually useful.  
+**0:00-0:10** — Show the demo/result or the scorecard immediately.
+**0:10-0:20** — State the problem: viewers hear about this trend but do not know what is actually useful.
 **0:20-0:30** — Promise the structure: one simple demo, one limitation, one recommendation.
 
 ## Open loops

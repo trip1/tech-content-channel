@@ -18,14 +18,14 @@ Links:
 - Corrections/updates: add after upload if tools change
 
 ## Chapters
-00:00 The result and the catch  
-00:25 Why this matters now  
-01:20 The simple mental model  
-02:20 Demo setup  
-03:15 Real workflow test  
-05:30 Verification and scorecard  
-07:15 What worked and what did not  
-08:45 Recommendation  
+00:00 The result and the catch
+00:25 Why this matters now
+01:20 The simple mental model
+02:20 Demo setup
+03:15 Real workflow test
+05:30 Verification and scorecard
+07:15 What worked and what did not
+08:45 Recommendation
 10:00 Next beginner workflow
 
 ## Tags / keywords
