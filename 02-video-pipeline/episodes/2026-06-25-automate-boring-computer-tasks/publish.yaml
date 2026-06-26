@@ -1,0 +1,37 @@
+packages:
+  longform:
+    type: longform_video
+    media: final-2026-06-25-automate-boring-computer-tasks.mp4
+    title: "The Easiest Way to Automate Boring Computer Tasks"
+    description: publish-notes.md
+    thumbnail: thumbnail.png
+  short_1:
+    type: short_video
+    media: shorts/short-1.mp4
+    title: "The dry-run habit that keeps beginner automation safe."
+    description: shorts/short-1-caption.md
+  short_2:
+    type: short_video
+    media: shorts/short-2.mp4
+    title: "A boring task you should automate this weekend."
+    description: shorts/short-2-caption.md
+
+targets:
+  - platform: youtube
+    account: youtube_main
+    package: longform
+    status: script_ready
+    publish_at: null
+    external_url: null
+  - platform: youtube_shorts
+    account: youtube_main
+    package: short_1
+    status: idea
+    publish_at: null
+    external_url: null
+  - platform: youtube_shorts
+    account: youtube_main
+    package: short_2
+    status: idea
+    publish_at: null
+    external_url: null

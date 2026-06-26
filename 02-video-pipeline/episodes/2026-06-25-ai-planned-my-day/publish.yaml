@@ -1,0 +1,37 @@
+packages:
+  longform:
+    type: longform_video
+    media: final-2026-06-25-ai-planned-my-day.mp4
+    title: "I Let an AI Plan My Day — Did It Work?"
+    description: publish-notes.md
+    thumbnail: thumbnail.png
+  short_1:
+    type: short_video
+    media: shorts/short-1.mp4
+    title: "The prompt that made AI planning actually usable."
+    description: shorts/short-1-caption.md
+  short_2:
+    type: short_video
+    media: shorts/short-2.mp4
+    title: "The part of my day AI planned badly."
+    description: shorts/short-2-caption.md
+
+targets:
+  - platform: youtube
+    account: youtube_main
+    package: longform
+    status: script_ready
+    publish_at: null
+    external_url: null
+  - platform: youtube_shorts
+    account: youtube_main
+    package: short_1
+    status: idea
+    publish_at: null
+    external_url: null
+  - platform: youtube_shorts
+    account: youtube_main
+    package: short_2
+    status: idea
+    publish_at: null
+    external_url: null

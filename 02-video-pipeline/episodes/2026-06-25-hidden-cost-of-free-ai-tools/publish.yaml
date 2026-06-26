@@ -1,0 +1,37 @@
+packages:
+  longform:
+    type: longform_video
+    media: final-2026-06-25-hidden-cost-of-free-ai-tools.mp4
+    title: "The Hidden Cost of Free AI Tools"
+    description: publish-notes.md
+    thumbnail: thumbnail.png
+  short_1:
+    type: short_video
+    media: shorts/short-1.mp4
+    title: "The free AI tool checklist I wish I had earlier."
+    description: shorts/short-1-caption.md
+  short_2:
+    type: short_video
+    media: shorts/short-2.mp4
+    title: "The hidden cost is not always your data."
+    description: shorts/short-2-caption.md
+
+targets:
+  - platform: youtube
+    account: youtube_main
+    package: longform
+    status: script_ready
+    publish_at: null
+    external_url: null
+  - platform: youtube_shorts
+    account: youtube_main
+    package: short_1
+    status: idea
+    publish_at: null
+    external_url: null
+  - platform: youtube_shorts
+    account: youtube_main
+    package: short_2
+    status: idea
+    publish_at: null
+    external_url: null

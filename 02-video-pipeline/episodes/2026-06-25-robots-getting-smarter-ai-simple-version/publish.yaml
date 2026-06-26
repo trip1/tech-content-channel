@@ -1,0 +1,37 @@
+packages:
+  longform:
+    type: longform_video
+    media: final-2026-06-25-robots-getting-smarter-ai-simple-version.mp4
+    title: "Robots Are Getting Smarter Because of AI — The Simple Version"
+    description: publish-notes.md
+    thumbnail: thumbnail.png
+  short_1:
+    type: short_video
+    media: shorts/short-1.mp4
+    title: "Why robots are hard: the world does not stay still."
+    description: shorts/short-1-caption.md
+  short_2:
+    type: short_video
+    media: shorts/short-2.mp4
+    title: "The difference between a cool robot demo and a useful robot."
+    description: shorts/short-2-caption.md
+
+targets:
+  - platform: youtube
+    account: youtube_main
+    package: longform
+    status: script_ready
+    publish_at: null
+    external_url: null
+  - platform: youtube_shorts
+    account: youtube_main
+    package: short_1
+    status: idea
+    publish_at: null
+    external_url: null
+  - platform: youtube_shorts
+    account: youtube_main
+    package: short_2
+    status: idea
+    publish_at: null
+    external_url: null
