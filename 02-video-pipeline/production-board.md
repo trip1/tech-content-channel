@@ -9,6 +9,8 @@
 
 - [ ] Proxmox microVM setup — `02-video-pipeline/episodes/proxmox-microvm-setup/`
 
+- [ ] Stop prompting coding agents. Build them a loop — `02-video-pipeline/episodes/2026-06-25-agentic-loops-from-scratch/`
+
 ## Recording / Streaming
 
 ## Editing

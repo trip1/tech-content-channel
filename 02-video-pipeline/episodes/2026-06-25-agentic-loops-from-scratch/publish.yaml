@@ -1,0 +1,39 @@
+packages:
+  longform:
+    type: longform_video
+    media: final-longform.mp4
+    title: "Stop prompting coding agents. Build them a loop."
+    description: publish-notes.md
+    thumbnail: thumbnail.png
+
+  short_1:
+    type: short_video
+    media: shorts/agent-loop-template.mp4
+    caption: shorts/agent-loop-template-caption.md
+
+  short_2:
+    type: short_video
+    media: shorts/agents-md-explained.mp4
+    caption: shorts/agents-md-explained-caption.md
+
+targets:
+  - platform: youtube
+    account: youtube_main
+    package: longform
+    status: planned
+    publish_at: 2026-07-19T16:00:00Z
+    external_url: ""
+
+  - platform: youtube_shorts
+    account: youtube_main
+    package: short_1
+    status: planned
+    publish_at: 2026-07-20T16:00:00Z
+    external_url: ""
+
+  - platform: youtube_shorts
+    account: youtube_main
+    package: short_2
+    status: planned
+    publish_at: 2026-07-22T16:00:00Z
+    external_url: ""

@@ -11,3 +11,4 @@
 | 7 | Zero-downtime deploys without Kubernetes | YouTube + demo | Server Infrastructure | ready-to-build | Build Compose demo from script |
 | 8 | Bunny DNS is free. Should you switch? | YouTube | Homelab | ready-to-script | Record DNS provider comparison |
 | 9 | Is the Raspberry Pi shortage finally over? | YouTube | Homelab | ready-to-script | Add Pi availability screenshots |
+| 10 | Stop prompting coding agents. Build them a loop | YouTube | Tech Experiments | scripting | Record demo repo runs in Codex, Claude Code, and OpenCode |

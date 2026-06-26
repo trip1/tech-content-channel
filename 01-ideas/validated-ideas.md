@@ -11,3 +11,4 @@ Move ideas here once they have a clear audience, hook, outcome, and feasible rec
 | Zero-downtime Docker Compose | Homelab and small SaaS builders | You probably do not need Kubernetes for this | Working deploy pattern + demo plan | ready-to-build |
 | Bunny DNS free | Homelabbers and small site owners | DNS bills should be boring, maybe zero | Provider decision framework | ready-to-script |
 | Raspberry Pi Locator shutdown | Makers and homelabbers | The Pi shortage website is shutting down | Buyer's guide for Pi vs mini PC | ready-to-script |
+| Agentic loops from scratch | Developers using AI coding tools | Stop prompting agents; build the loop around them | Copyable loop + Codex/Claude Code/OpenCode workflow | scripting |
